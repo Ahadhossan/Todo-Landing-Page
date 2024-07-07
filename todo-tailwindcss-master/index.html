@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Todo Landing Page</title>
+</head>
+<body class="font-inter">
+    
+    <!-- start: Navbar -->
+    <nav class="py-4 bg-yellow-100 relative group/navbar navbar [&.navbar-active]:bg-white md:[&.navbar-active]:bg-yellow-100 z-30">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <div class="flex items-center">
+                <a href="#" class="text-3xl font-black tracking-tight font-onest">Todo</a>
+                <ul class="md:flex md:items-center md:space-x-8 md:mx-auto absolute md:static top-full left-0 w-full pb-4 md:pb-0 md:w-auto bg-white md:bg-transparent divide-y divide-gray-200 md:divide-y-0 hidden group-[.navbar-active]/navbar:block md:group-[.navbar-active]/navbar:flex">
+                    <li class="relative group/navbar-item">
+                        <a href="#" class="flex items-center space-x-2 font-semibold tracking-tight py-3 px-4 md:p-0 hover:bg-gray-100 md:hover:bg-transparent group-[.active]/navbar-item:bg-black group-[.active]/navbar-item:text-white md:group-[.active]/navbar-item:bg-transparent md:group-[.active]/navbar-item:text-black" data-toggle="navbar-item-dropdown">
+                            <span>About</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="md:absolute top-full left-1/2 md:-translate-x-1/2 md:translate-y-6 md:w-40 bg-white md:border-2 border-black rounded-md py-1 hidden group-[.active]/navbar-item:block list-disc md:list-none pl-8 md:pl-0 marker:text-green-800">
+                            <li>
+                                <a href="#" class="py-1.5 md:px-4 font-semibold tracking-tight md:hover:bg-black md:hover:text-white block">Company</a>
+                            </li>
+                            <li>
+                                <a href="#" class="py-1.5 md:px-4 font-semibold tracking-tight md:hover:bg-black md:hover:text-white block">Our team</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center px-4 py-3 space-x-2 font-semibold tracking-tight md:p-0 hover:bg-gray-100 md:hover:bg-transparent">
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center px-4 py-3 space-x-2 font-semibold tracking-tight md:p-0 hover:bg-gray-100 md:hover:bg-transparent">
+                            <span>Reviews</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="flex items-center ml-auto space-x-6 md:ml-0">
+                    <a href="#" class="font-semibold tracking-tight">Login</a>
+                    <a href="#" class="px-4 py-2 font-semibold tracking-tight text-white bg-black border-2 border-black rounded-md hover:bg-white hover:text-black hover:shadow-bottom">Get Started</a>
+                </div>
+                <button type="button" class="w-10 h-10 flex items-center justify-center text-lg ml-3 md:hidden border-2 border-transparent rounded-md hover:bg-white hover:border-black group-[.navbar-active]/navbar:bg-white group-[.navbar-active]/navbar:border-black" data-toggle="navbar"><i class="ri-menu-line"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- end: Navbar -->
+
+    <!-- start: Hero -->
+    <header class="py-16 bg-yellow-100">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <div class="relative text-center">
+                <h2 class="mb-2 text-sm font-semibold tracking-tight text-center text-green-800 font-onest">Effortless Work Management</h2>
+                <h2 class="max-w-lg mx-auto mb-4 text-4xl font-bold leading-tight tracking-tight text-center sm:text-5xl font-onest sm:leading-tight">Streamline Your Work, Simplify Your Life</h2>
+                <p class="max-w-sm mx-auto mb-6 text-lg leading-normal tracking-tight text-center text-gray-500">Organize, prioritize, collaborate, and boost productivity effortlessly with Todo.</p>
+                <a href="#" class="inline-flex items-center px-6 py-3 space-x-2 text-lg font-semibold tracking-tight text-white bg-black border-2 border-black rounded-md hover:bg-white hover:text-black hover:shadow-bottom">
+                    <span>Get Started</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <img src="dist/img/user-1.jpg" alt="" class="absolute top-0 hidden object-cover w-32 h-32 border-2 border-black rounded-full left-28 shadow-bottom lg:block">
+                <img src="dist/img/user-2.jpg" alt="" class="absolute hidden object-cover w-24 h-24 border-2 border-black rounded-full top-48 left-48 shadow-bottom lg:block">
+                <img src="dist/img/user-2.jpg" alt="" class="absolute top-0 hidden object-cover w-32 h-32 border-2 border-black rounded-full right-28 shadow-bottom lg:block">
+                <img src="dist/img/user-1.jpg" alt="" class="absolute hidden object-cover w-24 h-24 border-2 border-black rounded-full top-48 right-48 shadow-bottom lg:block">
+                <img src="dist/img/hero.jpg" alt="" class="block w-full max-w-5xl mx-auto mt-16 border-2 border-black rounded-xl shadow-bottom">
+            </div>
+        </div>
+    </header>
+    <!-- end: Hero -->
+
+    <!-- start: Partner -->
+    <section class="py-12">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-6">
+                <img src="dist/img/microsoft.png" alt="" class="block object-contain w-full h-12">
+                <img src="dist/img/airbnb.png" alt="" class="block object-contain w-full h-12">
+                <img src="dist/img/uber.png" alt="" class="block object-contain w-full h-12">
+                <img src="dist/img/mailchimp.png" alt="" class="block object-contain w-full h-12">
+                <img src="dist/img/slack.png" alt="" class="block object-contain w-full h-12">
+                <img src="dist/img/medium.png" alt="" class="block object-contain w-full h-12">
+            </div>
+        </div>
+    </section>
+    <!-- end: Partner -->
+
+    <!-- start: Feature -->
+    <section class="py-12 bg-gray-50">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <h2 class="mb-2 text-sm font-semibold tracking-tight text-green-800 font-onest">Effortless Work Management</h2>
+            <h2 class="max-w-xl mb-2 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-onest sm:leading-tight">Unlock the Power of Productivity</h2>
+            <p class="max-w-lg mb-8 leading-normal tracking-tight text-gray-500">Discover the array of features Todo offers to streamline your workflow.</p>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div class="flex flex-col items-start p-6 pb-0 bg-red-200 sm:p-8 sm:pb-0 rounded-xl">
+                    <div class="py-1.5 px-3 rounded-md bg-white/50 flex items-center space-x-2 mb-4">
+                        <i class="ri-rocket-line"></i>
+                        <span class="text-xs font-semibold tracking-tight font-onest">Powerful Tools for Seamless Work Management</span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold leading-tight tracking-tight sm:text-3xl sm:leading-tight font-onest">Unlock the Power of Productivity</h2>
+                    <p class="mb-6 text-sm leading-normal tracking-tight text-gray-500">With Todo's intuitive task management system, you can easily create, prioritize, and track tasks.</p>
+                    <img src="dist/img/feature-1.jpg" alt="" class="block w-full mt-auto rounded-tl-lg rounded-tr-lg">
+                </div>
+                <div class="flex flex-col items-start p-6 pb-0 bg-purple-200 sm:p-8 sm:pb-0 rounded-xl">
+                    <div class="py-1.5 px-3 rounded-md bg-white/50 flex items-center space-x-2 mb-4">
+                        <i class="ri-rocket-line"></i>
+                        <span class="text-xs font-semibold tracking-tight font-onest">Enhance Team Communication</span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold leading-tight tracking-tight sm:text-3xl sm:leading-tight font-onest">Collaborative Team Spaces</h2>
+                    <p class="mb-6 text-sm leading-normal tracking-tight text-gray-500">Todo provides collaborative team spaces where members can share ideas, assign tasks, and track progress in real-time.</p>
+                    <img src="dist/img/feature-1.jpg" alt="" class="block w-full mt-auto rounded-tl-lg rounded-tr-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Feature -->
+
+    <!-- start: Service -->
+    <section class="py-12 bg-yellow-100">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <h2 class="mb-2 text-sm font-semibold tracking-tight text-green-800 font-onest">Elevate Your Workflow with Tailored Services</h2>
+            <h2 class="max-w-xl mb-2 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-onest sm:leading-tight">Your Path to Peak Productivity</h2>
+            <p class="max-w-lg mb-8 leading-normal tracking-tight text-gray-500">Explore Todo's comprehensive suite of services crafted to amplify your work management journey.</p>
+            <div class="space-y-4 md:flex md:space-x-6 md:space-y-0">
+                <div class="flex items-center flex-shrink-0 pb-2 space-x-2 overflow-x-auto md:w-72 md:space-y-2 md:space-x-0 md:block md:pb-0">
+                    <a href="#" class=" py-2 px-4 rounded-md tracking-tight font-semibold block border-2 border-transparent [&.active]:bg-white [&.active]:border-black [&.active]:shadow-bottom whitespace-nowrap md:truncate active" data-service-for="service-1">Personalized Onboarding Sessions</a>
+                    <a href="#" class=" py-2 px-4 rounded-md tracking-tight font-semibold block border-2 border-transparent [&.active]:bg-white [&.active]:border-black [&.active]:shadow-bottom whitespace-nowrap md:truncate" data-service-for="service-2">Dedicated Account Manager</a>
+                    <a href="#" class=" py-2 px-4 rounded-md tracking-tight font-semibold block border-2 border-transparent [&.active]:bg-white [&.active]:border-black [&.active]:shadow-bottom whitespace-nowrap md:truncate" data-service-for="service-3">Customized Training Workshops</a>
+                    <a href="#" class=" py-2 px-4 rounded-md tracking-tight font-semibold block border-2 border-transparent [&.active]:bg-white [&.active]:border-black [&.active]:shadow-bottom whitespace-nowrap md:truncate" data-service-for="service-4">24/7 Priority Support</a>
+                    <a href="#" class=" py-2 px-4 rounded-md tracking-tight font-semibold block border-2 border-transparent [&.active]:bg-white [&.active]:border-black [&.active]:shadow-bottom whitespace-nowrap md:truncate" data-service-for="service-5">Exclusive Feature Access</a>
+                </div>
+                <div>
+                    <img src="dist/img/service-1.jpg" alt="" class="hidden [&.active]:block w-full rounded-lg border-2 border-black shadow-bottom active" data-service-value="service-1">
+                    <img src="dist/img/feature-1.jpg" alt="" class="hidden [&.active]:block w-full rounded-lg border-2 border-black shadow-bottom" data-service-value="service-2">
+                    <img src="dist/img/service-1.jpg" alt="" class="hidden [&.active]:block w-full rounded-lg border-2 border-black shadow-bottom" data-service-value="service-3">
+                    <img src="dist/img/feature-1.jpg" alt="" class="hidden [&.active]:block w-full rounded-lg border-2 border-black shadow-bottom" data-service-value="service-4">
+                    <img src="dist/img/service-1.jpg" alt="" class="hidden [&.active]:block w-full rounded-lg border-2 border-black shadow-bottom" data-service-value="service-5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Service -->
+
+    <!-- start: Pricing -->
+    <section class="py-12">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <h2 class="mb-2 text-sm font-semibold tracking-tight text-green-800 font-onest">Flexible Pricing to Fit Your Needs</h2>
+            <h2 class="max-w-xl mb-2 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-onest sm:leading-tight">Choose Your Plan</h2>
+            <p class="max-w-lg mb-8 leading-normal tracking-tight text-gray-500">Explore our range of pricing plans designed to accommodate teams of all sizes and budgets.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+                <div class="flex flex-col p-6 bg-white border-2 border-black rounded-lg sm:p-8 shadow-bottom">
+                    <div class="mb-1 text-xl font-bold tracking-tight font-onest">Basic</div>
+                    <p class="mb-4 text-sm leading-normal text-gray-500">Play around with it first.</p>
+                    <div class="mb-1 text-5xl font-bold leading-tight tracking-tight font-onest">&dollar;0</div>
+                    <p class="mb-6 text-sm leading-normal text-gray-500">per month</p>
+                    <ul class="mb-8 space-y-2">
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Unlimited tasks and projects</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic integrations (e.g., Google Calendar, Slack)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Unlimited tasks and projects</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic integrations (e.g., Google Calendar, Slack)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block px-4 py-2 mt-auto font-semibold tracking-tight text-center text-white bg-black border-2 border-black rounded-md hover:bg-white hover:text-black hover:shadow-bottom">Choose Plan</a>
+                </div>
+                <div class="flex flex-col p-6 bg-black border-2 border-black rounded-lg sm:p-8 shadow-bottom">
+                    <div class="mb-1 text-xl font-bold tracking-tight text-white font-onest">Pro</div>
+                    <p class="mb-4 text-sm leading-normal text-gray-400">Play around with it first.</p>
+                    <div class="mb-1 text-5xl font-bold leading-tight tracking-tight text-white font-onest">&dollar;10</div>
+                    <p class="mb-6 text-sm leading-normal text-gray-400">per month</p>
+                    <ul class="mb-8 space-y-2">
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-400">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Unlimited tasks and projects</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-400">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-400">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic integrations (e.g., Google Calendar, Slack)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-400">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Unlimited tasks and projects</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-400">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-400">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic integrations (e.g., Google Calendar, Slack)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-400">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block px-4 py-2 mt-auto font-semibold tracking-tight text-center text-black bg-white border-2 border-black rounded-md hover:shadow-bottom">Choose Plan</a>
+                </div>
+                <div class="flex flex-col p-6 bg-white border-2 border-black rounded-lg sm:p-8 shadow-bottom">
+                    <div class="mb-1 text-xl font-bold tracking-tight font-onest">Enterprise</div>
+                    <p class="mb-4 text-sm leading-normal text-gray-500">Play around with it first.</p>
+                    <div class="mb-1 text-5xl font-bold leading-tight tracking-tight font-onest">&dollar;20</div>
+                    <p class="mb-6 text-sm leading-normal text-gray-500">per month</p>
+                    <ul class="mb-8 space-y-2">
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Unlimited tasks and projects</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic integrations (e.g., Google Calendar, Slack)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Unlimited tasks and projects</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic integrations (e.g., Google Calendar, Slack)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic task management features (create, assign, and track tasks)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm leading-snug tracking-tight text-gray-500">
+                            <i class="text-lg text-green-500 ri-checkbox-circle-fill"></i>
+                            <span>Basic integrations (e.g., Google Calendar, Slack)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block px-4 py-2 mt-auto font-semibold tracking-tight text-center text-white bg-black border-2 border-black rounded-md hover:bg-white hover:text-black hover:shadow-bottom">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Pricing -->
+
+    <!-- start: CTA -->
+    <section class="py-12 bg-yellow-100">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <h2 class="mb-2 text-sm font-semibold tracking-tight text-center text-green-800 font-onest">Take the Next Step with Todo</h2>
+            <h2 class="max-w-xl mx-auto mb-2 text-3xl font-bold leading-tight tracking-tight text-center sm:text-4xl font-onest sm:leading-tight">Ready to Supercharge Your Workflow?</h2>
+            <p class="max-w-lg mx-auto mb-6 leading-normal tracking-tight text-center text-gray-500">Join thousands of satisfied users who have transformed their work management experience with Todo.</p>
+            <div class="text-center">
+                <a href="#" class="inline-flex items-center px-6 py-3 space-x-2 text-lg font-semibold tracking-tight text-white bg-black border-2 border-black rounded-md hover:bg-white hover:text-black hover:shadow-bottom">
+                    <span>Signup Now</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end: CTA -->
+
+    <!-- start: Footer -->
+    <footer class="py-8 bg-black">
+        <div class="container px-4 mx-auto xl:max-w-6xl">
+            <div class="text-center">
+                <a href="#" class="inline-block mb-4 text-3xl font-black tracking-tight text-white font-onest">Todo</a>
+                <p class="text-gray-400">By AHAD.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end: Footer -->
+
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
